@@ -8,8 +8,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Incident {
     
-	protected int delayFromFreeFlow;
-    protected int delayFromTypical;
+	protected float delayFromFreeFlow;
+    protected float delayFromTypical;
     protected String fullDesc;
     protected int severity;
     protected String lng;
@@ -18,7 +18,7 @@ public class Incident {
     protected Date endTime;
     protected long id;
     protected Date startTime;
-    protected int distance;
+    protected float distance;
     protected boolean impacting;
     protected String[] tmcs;
     protected int eventCode;
@@ -29,19 +29,19 @@ public class Incident {
     	super();
     }
 
-	public int getDelayFromFreeFlow() {
+	public float getDelayFromFreeFlow() {
 		return delayFromFreeFlow;
 	}
 
-	public void setDelayFromFreeFlow(int delayFromFreeFlow) {
+	public void setDelayFromFreeFlow(float delayFromFreeFlow) {
 		this.delayFromFreeFlow = delayFromFreeFlow;
 	}
 
-	public int getDelayFromTypical() {
+	public float getDelayFromTypical() {
 		return delayFromTypical;
 	}
 
-	public void setDelayFromTypical(int delayFromTypical) {
+	public void setDelayFromTypical(float delayFromTypical) {
 		this.delayFromTypical = delayFromTypical;
 	}
 
@@ -109,11 +109,11 @@ public class Incident {
 		this.startTime = startTime;
 	}
 
-	public int getDistance() {
+	public float getDistance() {
 		return distance;
 	}
 
-	public void setDistance(int distance) {
+	public void setDistance(float distance) {
 		this.distance = distance;
 	}
 
